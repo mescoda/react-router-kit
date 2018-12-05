@@ -1,0 +1,30 @@
+{
+  "name": "react-router-kit",
+  "version": "0.0.1",
+  "description": "Toolkit for React Router v4",
+  "main": "dist/cjs/react-router-kit.js",
+  "module": "dist/esm/react-router-kit.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "github:mescoda/react-router-kit",
+  "keywords": [
+    "react",
+    "router"
+  ],
+  "author": "mescoda",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=15",
+    "react-router-dom": ">=4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "rollup": "^0.67.4",
+    "rollup-plugin-babel": "^4.0.3"
+  }
+}
