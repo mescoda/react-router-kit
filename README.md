@@ -6,6 +6,17 @@ Router toolkits for React Router v4, includes:
 - Router config supports inexplicit route
 - Base Route
 
+## Installation
+
+`npm i -S react-router-kit`
+
+```js
+import {
+    renderRoutes,
+    BRoute
+} from 'react-router-kit'
+```
+
 ## Router config using `renderRoutes`
 
 ```js
