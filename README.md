@@ -14,7 +14,7 @@ Router toolkits for React Router v4, includes:
 import {
     renderRoutes,
     BRoute
-} from 'react-router-kit'
+} from 'react-router-kit';
 ```
 
 ## Router config using `renderRoutes`

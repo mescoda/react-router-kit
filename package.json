@@ -1,6 +1,6 @@
 {
   "name": "react-router-kit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Toolkit for React Router v4",
   "main": "dist/cjs/react-router-kit.js",
   "module": "dist/esm/react-router-kit.js",
