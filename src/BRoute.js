@@ -1,42 +1,6 @@
 
-import React from 'react';
+import withPropsPassing from './withPropsPassing';
 
-import {
-    Route
-} from 'react-router-dom';
-
-export default ({
-    component: Component,
-    ...restProps
-}) => {
-
-    if (restProps.subRoutes) {
-        return (
-            <Route
-                {...{
-                    // `component` and `render` should not on the same route
-                    ...restProps,
-                    render: childProps => {
-                        return (
-                            <Component
-                                {...{
-                                    ...childProps,
-                                    subRoutes: restProps.subRoutes
-                                }}
-                            />
-                        );
-                    }
-                }}
-            />
-        );
-    }
-
-    return (
-        <Route
-            {...{
-                ...restProps,
-                component: Component
-            }}
-        />
-    );
-};
+// build <BRoute> which can pass subRoutes prop on <Route> to Component, help generating series of <Route> with central route config
+// 构建出可以将 <Route> 上的 subRoutes 直接向 Component 传递的 <BRoute>，方便通过统一配置生成一系列 <Route>
+export default withPropsPassing(['subRoutes']);

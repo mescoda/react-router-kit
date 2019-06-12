@@ -8,6 +8,7 @@ import {
 
 /**
  * renderRoutes
+ * help building <Route> list from a route config
  *
  * @param {Object} rootConfig root routes config
  * @param {number} level level

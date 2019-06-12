@@ -6,3 +6,7 @@ export {
 export {
     default as BRoute
 } from './BRoute';
+
+export {
+    default as withPropsPassing
+} from './withPropsPassing';
