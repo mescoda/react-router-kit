@@ -8,7 +8,7 @@
     "build": "rollup -c",
     "clearBuild": "rm -rf dist/",
     "version": "npm run clearBuild && npm run build",
-    "postversion": "git push origin && git push origin --tags",
+    "postversion": "git push origin master && git push origin master --tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "github:mescoda/react-router-kit",
